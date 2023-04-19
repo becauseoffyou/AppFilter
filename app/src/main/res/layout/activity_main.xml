@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/simpleSearchView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+        android:id="@+id/btnfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/simpleSearchView"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <RelativeLayout
+        android:id="@+id/lyfilter"
+        android:layout_below="@id/btnfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/bg_border"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Fulltime "
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <Switch
+            android:id="@+id/fulltime"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:id="@+id/labelloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Location "
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:layout_toRightOf="@id/labelloc"
+            android:id="@+id/location"
+            android:height="40dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:hint="insert location..."
+            android:background="@drawable/bg_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/ly2"
+        android:layout_marginTop="10sp"
+        android:id="@+id/submit"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:layout_height="wrap_content"
+        android:text="Apply Filter"/>
+
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_below="@id/lyfilter"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/idPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentBottom="true"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+
+
+
+
+
+</RelativeLayout>

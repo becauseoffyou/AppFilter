@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "550926541083",
+    "project_id": "yukkerja",
+    "storage_bucket": "yukkerja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550926541083:android:466ed7ce37637dd9c4b3be",
+        "android_client_info": {
+          "package_name": "com.example.yukkerja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550926541083-gim908q0cimr9gc2bsjlql4ckm2qkru9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yukkerja",
+            "certificate_hash": "a45f7ec2cf6b2bb275a1c7332b5f4646c0e13c21"
+          }
+        },
+        {
+          "client_id": "550926541083-lh57ivku075furo87cf9gjhr3ck1mejt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLGYIOCF3HN26Oxll13XkbY-QCH37xtwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550926541083-lh57ivku075furo87cf9gjhr3ck1mejt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
